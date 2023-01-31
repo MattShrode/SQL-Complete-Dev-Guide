@@ -38,7 +38,10 @@ CREATE TABLE intranet_accounts (
 
 -- Intermediate Table => n:n
 CREATE TABLE projects_employees (
-    employee_id INT REFERENCES employees (id) ON DELETE CASCADE,
+    employee_id INT,
     project_id INT REFERENCES projects (id) ON DELETE CASCADE,
     PRIMARY KEY (employee_id, project_id)
+    FOREIGN KEY (employee_id) REFERENCES employees (id) ON DELETE CASCADE
+    -- FOREIGN KEY (employee_id, project_id) REFERENCES employees (eid, pid)
+    --  ^ Example of a foreign key pointing at a composite primary key.
 );
