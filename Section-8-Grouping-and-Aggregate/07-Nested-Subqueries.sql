@@ -1,4 +1,4 @@
-SELECT booking_date
+SELECT booking_date, SUM(amount_billed)
 FROM bookings
 GROUP BY booking_date
 HAVING SUM(amount_billed) = (
@@ -9,5 +9,3 @@ HAVING SUM(amount_billed) = (
         GROUP BY booking_date
     ) AS daily_table
 );
-    
-    
