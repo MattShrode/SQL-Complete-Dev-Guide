@@ -4,7 +4,9 @@ INSERT INTO customers(
     email
 )
 VALUES(
-    'Jonas',
-    'Blue',
-    'Jonas@test.com'
+    'Mary',
+    'White',
+    'Mary@test.com'
 );
+
+SAVEPOINT save_1;

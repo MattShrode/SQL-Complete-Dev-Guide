@@ -4,5 +4,4 @@ INSERT INTO orders(
 )
 VALUES(
     103.12,
-    6
 );
