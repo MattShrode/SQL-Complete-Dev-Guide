@@ -10,3 +10,8 @@ SELECT name, salary FROM employees WHERE salary > 8000;
     -- 3. WHERE Salary > 8000
 -- Value/Expression: 8000
 -- Operator: >
+
+
+
+-- Database Creation:
+CREATE DATABASE example_name;
