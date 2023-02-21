@@ -15,3 +15,12 @@ SELECT name, salary FROM employees WHERE salary > 8000;
 
 -- Database Creation:
 CREATE DATABASE example_name;
+
+
+-- Table Creation:
+CREATE TABLE example (
+    example_column_1,
+    example_column_2
+);
+-- Alternative Naming:
+CREATE TABLE "example";
