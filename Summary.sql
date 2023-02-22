@@ -29,3 +29,7 @@ CREATE TABLE "example";
 -- Constraints:
 example_column_1 INT NOT NULL, -- Value must be provided, and cannot be null
 example_column_2 INT CHECK (example_column_2 > 0) -- Enforces a check on data insertion
+
+-- Functions:
+-- Length will compare the length of the entered string against the check value.
+example_column_3 VARCHAR(300) NOT NULL CHECK (LENGTH(name) > 5)
