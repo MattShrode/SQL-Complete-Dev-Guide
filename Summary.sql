@@ -29,7 +29,16 @@ CREATE TABLE "example";
 -- Constraints:
 example_column_1 INT NOT NULL, -- Value must be provided, and cannot be null
 example_column_2 INT CHECK (example_column_2 > 0) -- Enforces a check on data insertion
+example_column_3 INT UNIQUE -- Requires the entered value to be different from all others
 
 -- Functions:
 -- Length will compare the length of the entered string against the check value.
 example_column_3 VARCHAR(300) NOT NULL CHECK (LENGTH(name) > 5)
+
+-- Primary Keys
+    -- MySQL:
+        example_column_1 INT PRIMARY KEY AUTO_INCREMENT -- Sets table as the primary key
+        -- and automatically increments the value upon data insertion
+    --PostgreSQL:
+        example_column_1 SERIAL PRIMARY KEY -- Sets an INT type and automatically increments
+        -- the value upon data insertion, and designates the column as the primary key.
