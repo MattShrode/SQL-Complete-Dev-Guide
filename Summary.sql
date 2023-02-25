@@ -42,3 +42,8 @@ example_column_3 VARCHAR(300) NOT NULL CHECK (LENGTH(name) > 5)
     --PostgreSQL:
         example_column_1 SERIAL PRIMARY KEY -- Sets an INT type and automatically increments
         -- the value upon data insertion, and designates the column as the primary key.
+
+-- INSERT
+INSERT INTO table_name (example_column_1, example_column_2, ...)
+VALUES (value_1, value_2, ...), (value_3, value_4, ...);
+    -- Multiple records can be inserted on one command.
