@@ -47,3 +47,16 @@ example_column_3 VARCHAR(300) NOT NULL CHECK (LENGTH(name) > 5)
 INSERT INTO table_name (example_column_1, example_column_2, ...)
 VALUES (value_1, value_2, ...), (value_3, value_4, ...);
     -- Multiple records can be inserted on one command.
+
+-- SELECT
+SELECT * FROM table_name; -- * includes all columns.
+SELECT example_column_1 FROM table_name;
+
+-- UPDATE
+UPDATE table_name
+SET example_column_1 = 'new value'
+WHERE example_column_2 = 'some value';
+
+-- DELETE
+DELETE FROM table_name
+WHERE example_column_1 = 'some value';
