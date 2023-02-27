@@ -50,7 +50,9 @@ VALUES (value_1, value_2, ...), (value_3, value_4, ...);
 
 -- SELECT
 SELECT * FROM table_name; -- * includes all columns.
-SELECT example_column_1 FROM table_name;
+SELECT example_column_1 FROM table_name
+WHERE example_column_1 = 'some value'
+ORDER BY example_column_1 DESC;
 
 -- UPDATE
 UPDATE table_name
