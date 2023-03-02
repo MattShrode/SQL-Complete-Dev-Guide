@@ -62,3 +62,8 @@ WHERE example_column_2 = 'some value';
 -- DELETE
 DELETE FROM table_name
 WHERE example_column_1 = 'some value';
+
+--Foreign Keys
+CREATE TABLE example (
+    example_column_1 INT REFERENCES other_table (other_column)
+);
